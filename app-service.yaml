@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: myservice
+  labels:
+    role: myservice
+spec:
+  selector:
+    role: myservice
+  ports:
+  - port: 7070
+    targetPort: 7070
+  type: Nodeport
+
+    
